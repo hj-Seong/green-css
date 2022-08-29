@@ -23,3 +23,13 @@ span {
     color: green;
     font-family: 궁서;
 }
+
+table { 
+    background-color: bisque;
+    border-radius: 0 0 20px 20px;
+    border-collapse: collapse;
+}
+.table-title {
+    background-color: orange;
+    border-bottom: 1px solid brown;
+}
