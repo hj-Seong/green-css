@@ -13,3 +13,13 @@ p {
     background-color: bisque;
     padding: 10px;
 }
+a {
+    color: black;
+    text-decoration: none;
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+a:hover {
+    background-color: orangered;
+}
