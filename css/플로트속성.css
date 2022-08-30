@@ -7,5 +7,19 @@
     width: 30%;
 }
 .section {
+    clear: both;
     border: 3px solid green;
+}
+
+.m-box {
+    background-color: burlywood;
+    width: 300px;
+    height: 500px;
+    overflow: auto;
+}
+.float-box {
+    background-color: darksalmon;
+    float: left;
+    width: 200px;
+    height: 200px;
 }
