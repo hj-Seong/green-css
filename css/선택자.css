@@ -1,0 +1,18 @@
+/* 자손 선택자 접근*/
+.m-parents p {
+    background-color: yellow;
+}
+
+/* 자식 선택자 접근*/
+.m-parents > p {
+    border: 3px solid red;
+}
+
+/* 일반 동위 선택자 */
+.m-sibling ~ p {
+    background-color: beige;
+}
+/* 인접 동위 선택자 */
+.m-sibling + p {
+    background-color: chocolate;
+}
