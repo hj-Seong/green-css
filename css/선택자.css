@@ -26,3 +26,15 @@
 .test-ul .last-li + li {
     border: none;
 }
+
+/* 링크(a태그)에 사용하는 동적의사클래스*/
+a:link {color: red;}
+a:visited {color: blue;}
+a:hover {color: yellow;}
+a:active {color: green;}
+
+/*포커스를 가질수 있는 요소에 사용하는 동적의사클래스*/
+.focus-input:focus { background-color: coral;}
+
+/* 체크 상태일때, 바로 뒤에 있는 span 태그의 배경색을 바꾼다 */
+.checked-box:checked + span {background-color: red;}

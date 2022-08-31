@@ -1,0 +1,9 @@
+ol > li {
+    background-color: bisque;
+}
+
+input:focus {
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}

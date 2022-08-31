@@ -14,7 +14,7 @@
 .m-box {
     background-color: burlywood;
     width: 300px;
-    height: 500px;
+    height: 300px;
     overflow: auto;
 }
 .float-box {
