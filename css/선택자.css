@@ -93,3 +93,32 @@ a:active {color: green;}
     background-color: black;
     color: white;
 }
+
+input[type="button"] + span {
+    background-color: blue;
+}
+input[type="checkbox"] + span {
+    background-color: aqua;
+}
+input[type="radio"] + span {
+    color :blue;
+}
+
+/*
+not 의사 클래스는 앞에 요소를 붙여서 지정하지 않고
+괄호 안에 제외할 태그나 선택자를 입력한다
+*/
+body :not(p) {
+    color: blueviolet;
+}
+.not :not(p) {
+    color:  cadetblue;
+}
+
+.color {
+    color: orangered;
+}
+
+h1.color {
+    color: orchid;
+}
