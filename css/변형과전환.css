@@ -16,3 +16,16 @@
 }
 .transition-width { transition: width 1s; }
 .transition-width:hover { width: 200px;  transition-duration: 0.5s;}
+
+.transition-height { transition: height 1s;}
+.transition-height:hover { height: 200px;}
+
+.transition-color {
+    transition: 
+    background-color 1s, border-radius 1s; }
+.transition-color:hover {
+    background-color:coral; 
+    border-radius: 50%;
+}
+.transition-transform { transition: transform 1s;}
+.transition-transform:hover {transform: scale(1.5) rotate(90deg) }
