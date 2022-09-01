@@ -32,11 +32,10 @@
 }
 
 .main-contanier .main section {
-    display: inline-block;
+    float: left;
     width: 200px;
     height: 200px;
     border: 1px black solid;
-    float: left;
 }
 .main-contanier .main section:first-child{
     margin-right: 20px;

@@ -1,0 +1,18 @@
+.m-box {
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+}
+.translate { translate: 50px 100px; }
+.rotate { rotate: 30deg;}
+.scale { scale: 1.5; translate: 50px 0 }
+.skew { transform: skewX(-20deg);}
+.matrix { transform: matrix(1,2,3,4,5,6); visibility: hidden;}
+
+.t-box {
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+}
+.transition-width { transition: width 1s; }
+.transition-width:hover { width: 200px;  transition-duration: 0.5s;}
