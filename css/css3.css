@@ -31,3 +31,21 @@
     background-image: url(../img/img.jpg) ;
     background-size: 100px 100px;
 }
+.m-textbox {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.text-overflow {
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.korean-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
