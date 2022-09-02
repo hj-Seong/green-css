@@ -1,0 +1,12 @@
+.animation {
+    border: 3px solid orange;
+    /* 애니메이션 속성을 통해 이름과 시간을 정해준다. */
+    animation: animation 3s ;
+}
+/* 애니메이션을 사용하기위한 키프레임 */
+@keyframes animation {
+    /*처음 시작 디자인*/
+    from { margin-left: 100%;}
+    /*마지막 디자인*/
+    to { margin-left: 0;}
+} 
