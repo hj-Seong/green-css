@@ -49,10 +49,29 @@
         : 처음 div에서 x 축이기 때문 (div의 기준에서 x축*/
     /* 현재 div를 감싸는 새로운 부모태그를 만들어서 이동하면 된다*/
     0% {transform: rotate(0deg) scale(1);}
-    50% {transform: rotate(180deg) scale(2);}
+    50% {transform: rotate(180deg) scale(0.5);}
     100% {transform: rotate(360deg) scale(1); }
 }
 .animation-direction:hover {
     animation: animation 3s;
     animation-direction: reverse;
+}
+.new-box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid salmon;
+    box-shadow: 0 0 5px salmon;
+    animation: round 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes round {
+    0% { transform: rotate(0deg); }
+    25% {transform: rotate(90deg); 
+        border-top-left-radius:50%; 
+        border-bottom-left-radius:0%;
+        border-bottom-right-radius:0%; 
+        border-top-right-radius:0%;}
+    50% {transform: rotate(180deg);border-top-left-radius:50%; border-bottom-left-radius:50%;border-bottom-right-radius:0%; border-top-right-radius:0%;}
+    75% {transform: rotate(270deg); border-top-left-radius:50%; border-bottom-left-radius:50%;border-bottom-right-radius:50%; border-top-right-radius:0%;}
+    100% {transform: rotate(360deg);border-top-left-radius:50%; border-bottom-left-radius:50%;border-bottom-right-radius:50%; border-top-right-radius:50%;}
 }
