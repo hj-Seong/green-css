@@ -10,3 +10,49 @@
     /*마지막 디자인*/
     to { margin-left: 0;}
 } 
+
+.animation-hover:hover {
+    animation: animationHober 3s;
+}
+@keyframes animationHober {
+    from {margin-left: 0;}
+    to {margin-left: 100%;}
+}
+
+.animation-border { 
+    border: red 3px solid ;
+    animation: border 3s;
+}
+@keyframes border {
+    /* 퍼센트로 애니메이션을 시간순서에 따라 줄 수 있다 */
+    0% { border-color: red;}
+    30% { border-color: orange;}
+    60% { border-color: yellow;}
+    90% { border-color: green;}
+    100% { border-color: blue;}
+}
+
+.a-box {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+}
+.animation-count {
+    transform-origin: center;
+    animation: rotation 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotation {
+    /* translate가 원하는 모습이 아닌 이유 
+        : 처음 div에서 x 축이기 때문 (div의 기준에서 x축*/
+    /* 현재 div를 감싸는 새로운 부모태그를 만들어서 이동하면 된다*/
+    0% {transform: rotate(0deg) scale(1);}
+    50% {transform: rotate(180deg) scale(2);}
+    100% {transform: rotate(360deg) scale(1); }
+}
+.animation-direction:hover {
+    animation: animation 3s;
+    animation-direction: reverse;
+}
