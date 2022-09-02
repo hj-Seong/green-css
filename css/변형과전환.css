@@ -111,3 +111,36 @@
 .menu:hover .line2 { 
     opacity:0; 
 }
+
+/* 마우스 올렸을때 이미지 확대 */
+.img-box {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.img {
+    width: 350px;
+    transition: transform 1s;
+}
+.img-box:hover img {
+    transform: scale(1.2);
+}
+.img-box:after {
+    box-sizing: border-box;
+    display: inline-block;
+    content: "미리보기";
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding: 80px 0;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin-top: -230px;
+    transition: background-color 1s;
+}
+.img-box:hover:after  {
+    background-color: rgba(0, 0, 0, 0.3);
+}
