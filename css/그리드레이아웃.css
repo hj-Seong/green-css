@@ -44,4 +44,39 @@ div {
     grid-column: 3;
     grid-row: 4;
   }
-  
+
+/*그리드 레이아웃 정렬*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 
+    정렬을 사용할 때 높이를 지정해야 
+    아이템의 위치를 정렬해줄수있다
+    * 높이를 지정하지않으면 아이템의 크기에 자동으로 맞춤
+    */
+    height: 300px;
+    /*아이템의 크기가 고정되어 아이템이나가지않게하기위함*/
+    min-width: 318px;
+    /* 기본설정 : stretch */
+    /*가로정렬*/
+    justify-items: end;
+    /*세로정렬 : 전체가 이동*/
+    align-content: stretch
+}
+
+.grid-item {
+    /* 
+    아이템의 크기를 설정하지 않으면 
+    자동으로 그리드 컨테이너의 크기에 맞춰서 들어간다.
+     */
+    width: 100px;
+    height: 50px;
+}
+
+.add-align {
+    /* 개별 세로정렬 : 전체 align이 stretch일때 사용*/
+    background-color: blanchedalmond;
+    align-self: center;
+    /* 개별 가로정렬 */
+    justify-self: left;
+}
